@@ -148,10 +148,18 @@
                     <small class="theme-text d-block d-xl-none">Change appearance</small>
                   </span>
                 </button>
-                <a href="contact.html" class="lets-talk-btn">
-                  Hire Me
-                  
-                </a>
+                <button class="lets-talk-btn" onclick="download()">
+                    Hire Me
+                  </button>
+
+                  <script>
+                    function download() {
+                      const link = document.createElement("a");
+                      link.href = "https://sachinthani-2005.github.io/Sachinthani/assets/SachinthaniResume.pdf"; // Full URL
+                      link.download = "SachinthaniResume.pdf"; // Name of the downloaded file
+                      link.click();
+                    }
+                  </script>
               </div>
             </div>
             <div class="mobile-menu-overlay d-block d-lg-none"></div>
